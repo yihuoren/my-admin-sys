@@ -6,7 +6,7 @@
             style="width: 100%">
             <el-table-column
             prop="title"
-            label="标题"
+            label="文章标题"
             width="auto"
             align="center"
             >
