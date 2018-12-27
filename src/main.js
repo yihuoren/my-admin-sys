@@ -10,6 +10,7 @@ import '../static/css/icon.css';
 
 Vue.prototype.$axios = axios
 Vue.use(ElementUI, { size: 'small' });
+// 阻止 vue 在启动时生成生产提示
 Vue.config.productionTip = false
 
 
