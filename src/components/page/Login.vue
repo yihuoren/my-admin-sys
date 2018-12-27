@@ -27,7 +27,7 @@
         data: function(){
             return {
                 ruleForm: {
-                    username: 'admin',
+                    username: 'hailiang',
                     password: '123123'
                 },
                 rules: {
@@ -44,6 +44,7 @@
             submitForm(formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
+                        // 发起post请求，获取token及最后访问时间
                         localStorage.setItem('ms_username',this.ruleForm.username);
                         this.$router.push('/');
                     } else {

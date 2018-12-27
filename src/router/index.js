@@ -28,6 +28,12 @@ export default new Router({
                     path: '/marketwork',
                     component: resolve => require(['../components/page/MarketWork.vue'], resolve),
                     meta: { title: '新建工单' }
+                },
+                {
+                    // 权限页面
+                    path: '/permission',
+                    component: resolve => require(['../components/page/Permission.vue'], resolve),
+                    meta: { title: '权限测试', permission: true }
                 }
 
             ]
