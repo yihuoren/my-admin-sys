@@ -22,6 +22,11 @@ module.exports = {
           target: 'http://imoocnote.calfnote.com',
           changeOrigin: true
       }
+      // ,
+      // '/login':{
+      //   target:'http://192.168.1.101:8080',//连接开发接口的主机ip,必须启服务
+      //   changeOrigin:true
+      // }
     },
 
     // Various Dev Server settings

@@ -30,6 +30,16 @@ export default new Router({
                     meta: { title: '新建工单' }
                 },
                 {
+                    path: '/workquery',
+                    component: resolve => require(['../components/page/WorkQuery.vue'], resolve),
+                    meta: { title: '工单查询' }
+                },
+                {
+                    path: '/dataaddition',
+                    component: resolve => require(['../components/page/DataAddition.vue'], resolve),
+                    meta: { title: '数据添加' }
+                },
+                {
                     // 权限页面
                     path: '/permission',
                     component: resolve => require(['../components/page/Permission.vue'], resolve),

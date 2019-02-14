@@ -91,7 +91,7 @@ export default {
     name: 'batchmanagement',
     data() {
       return {
-        tableData: [],
+        tableData: [],       
         cur_page: 1,
         pageCount:0,
         multipleSelection: [],//选中显示的值
