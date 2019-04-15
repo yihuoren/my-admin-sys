@@ -40,6 +40,11 @@ export default new Router({
                     meta: { title: '数据添加' }
                 },
                 {
+                    path: '/blacklist',
+                    component: resolve => require(['../components/page/BlackList.vue'], resolve),
+                    meta: { title: '黑名单管理' }
+                },
+                {
                     // 权限页面
                     path: '/permission',
                     component: resolve => require(['../components/page/Permission.vue'], resolve),
