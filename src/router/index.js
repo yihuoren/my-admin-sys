@@ -45,6 +45,16 @@ export default new Router({
                     meta: { title: '黑名单管理' }
                 },
                 {
+                    path: '/workallot',
+                    component: resolve => require(['../components/page/Workallot.vue'], resolve),
+                    meta: { title: '工单分配配置' }
+                },
+                {
+                    path: '/reconsider',
+                    component: resolve => require(['../components/page/Reconsider.vue'], resolve),
+                    meta: { title: '复议工单' }
+                },
+                {
                     // 权限页面
                     path: '/permission',
                     component: resolve => require(['../components/page/Permission.vue'], resolve),
