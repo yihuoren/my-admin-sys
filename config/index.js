@@ -17,10 +17,6 @@ module.exports = {
         pathRewrite:{
             '^/api':''
         }
-      },
-      '/inter':{
-          target: 'http://imoocnote.calfnote.com',
-          changeOrigin: true
       }
       // ,
       // '/login':{
