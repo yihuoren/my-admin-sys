@@ -11,17 +11,19 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api':{
-        target:'http://jsonplaceholder.typicode.com',
-        changeOrigin:true,
-        pathRewrite:{
-            '^/api':''
+      '/': {
+        target: 'http://localhost:8081',//自己开发前后端
+        changeOrigin: true,
+        pathRewrite: {
+          '^/': ''
         }
       }
-      // ,
-      // '/login':{
-      //   target:'http://192.168.1.101:8080',//连接开发接口的主机ip,必须启服务
-      //   changeOrigin:true
+      // '/':{
+      //   target:'http://192.168.1.101:8081',//连接开发接口的后端人员主机ip,必须启服务
+      //   changeOrigin:true,
+      // pathRewrite: {
+      //   '^/': ''
+      // }
       // }
     },
 
